@@ -1,5 +1,10 @@
 package com.devsuperior.dslearnbds.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_content")
 public class Content extends Lesson {
 	private static final long SerialVersionUID = 1L;
 	
@@ -29,9 +34,5 @@ public class Content extends Lesson {
 
 	public void setVideoUri(String videoUri) {
 		this.videoUri = videoUri;
-	}
-
-	public static long getSerialversionuid() {
-		return SerialVersionUID;
 	}
 }
